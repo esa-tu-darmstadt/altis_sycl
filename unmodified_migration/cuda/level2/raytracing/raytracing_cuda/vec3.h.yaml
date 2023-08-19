@@ -1,0 +1,1479 @@
+---
+MainSourceFile:  '/home/u153009/altis_dpcpp/build/dpct_out_try/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+Replacements:
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          419
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          1104
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          1113
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          1601
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          1610
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          2059
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          2068
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          2485
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          2494
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          2911
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          2920
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          3326
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          3335
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          3741
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          3750
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          4156
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          4165
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          4598
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          4607
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          5055
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          5064
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          5587
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          5596
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          6105
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          6114
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          6629
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          6638
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          7147
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          7156
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          7668
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          7677
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          8183
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          8192
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          8705
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          8714
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          9220
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          9229
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          9640
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          9649
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          9697
+    Length:          39
+    ReplacementText: 'sycl::sqrt(e[0]*e[0] + e[1]*e[1] + e[2]*e[2])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          10099
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          10108
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          10517
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          10526
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          12100
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          12109
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          12179
+    Length:          39
+    ReplacementText: 'sycl::sqrt(e[0]*e[0] + e[1]*e[1] + e[2]*e[2])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          12714
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          12723
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          13331
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          13340
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          13964
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          13973
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          14564
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          14573
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          15195
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          15204
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          15758
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          15767
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          16347
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          16356
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          16882
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          16891
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          17441
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          17450
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          18093
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          18102
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          18662
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          18671
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          19225
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          19234
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          19791
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          19800
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          20362
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          20371
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          20912
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          20921
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          21445
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Offset:          21454
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/vec3.h'
+    Digest:          4a0ba5283f97389b167064466604ba19
+DpctVersion:     2023.2.0
+MainHelperFileName: dpct
+USMLevel:        ''
+FeatureMap:
+  atomic.hpp:
+    atomic_compare_exchange_strong:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+      SubFeatureMap:   {}
+    atomic_fetch_add:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+      SubFeatureMap:   {}
+    atomic_fetch_xor:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+      SubFeatureMap:   {}
+  blas_utils.hpp:
+    get_value:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+      SubFeatureMap:   {}
+  device.hpp:
+    cpu_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/mandelbrot/mandelbrot.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/srad/srad.cu'
+      SubFeatureMap:   {}
+    destroy_event:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+      SubFeatureMap:   {}
+    dev_mgr:
+      IsCalled:        false
+      SubFeatureMap:
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/common/support.h'
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/fdtd2d/fdtd2d.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/mandelbrot/mandelbrot.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/nw/needle.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/srad/srad.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/where/where.cu'
+          SubFeatureMap:   {}
+        dev_mgr_device_count:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+          SubFeatureMap:   {}
+        dev_mgr_get_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/cudacommon.h'
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/common/support.h'
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/fdtd2d/fdtd2d.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/mandelbrot/mandelbrot.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/nw/needle.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/srad/srad.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/where/where.cu'
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        false
+      SubFeatureMap:
+        device_ext_create_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/fdtd2d/fdtd2d.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+          SubFeatureMap:   {}
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/fdtd2d/fdtd2d.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/mandelbrot/mandelbrot.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/nw/needle.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/srad/srad.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/where/where.cu'
+          SubFeatureMap:   {}
+        device_ext_destroy_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/fdtd2d/fdtd2d.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+          SubFeatureMap:   {}
+        device_ext_get_device_info_return_info:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/cudacommon.h'
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/common/support.h'
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/nw/needle.cu'
+          SubFeatureMap:   {}
+        device_ext_get_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/support.h'
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d_double.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/components.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/fdwt53.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/fdwt97.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/rdwt53.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/rdwt97.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/fdtd2d/fdtd2d.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/mandelbrot/mandelbrot.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/nw/needle.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/srad/srad.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/where/where.cu'
+          SubFeatureMap:   {}
+        device_ext_reset:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmmain.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+          SubFeatureMap:   {}
+    device_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/common/cudacommon.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/common/support.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/nw/needle.cu'
+      SubFeatureMap:
+        device_info_get_global_mem_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/common/support.h'
+          SubFeatureMap:   {}
+        device_info_get_local_mem_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+          SubFeatureMap:   {}
+        device_info_get_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+          SubFeatureMap:   {}
+        device_info_get_max_clock_frequency:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+          SubFeatureMap:   {}
+        device_info_get_max_compute_units:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+          SubFeatureMap:   {}
+        device_info_get_max_nd_range_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+          SubFeatureMap:   {}
+        device_info_get_max_sub_group_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/cudacommon.h'
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+          SubFeatureMap:   {}
+        device_info_get_max_work_group_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/cudacommon.h'
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+          SubFeatureMap:   {}
+        device_info_get_max_work_item_sizes:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+          SubFeatureMap:   {}
+        device_info_get_max_work_items_per_compute_unit:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+          SubFeatureMap:   {}
+        device_info_get_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+          SubFeatureMap:   {}
+        device_info_get_name:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+          SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/common/support.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/components.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/fdwt53.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/fdwt97.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/rdwt53.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/rdwt97.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_main.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmmain.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/lavamd/lavaMD.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/mandelbrot/mandelbrot.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/nw/needle.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/srad/srad.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/where/where.cu'
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/common/support.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/components.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/fdwt53.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/fdwt97.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/rdwt53.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/rdwt97.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_main.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/lavamd/lavaMD.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/mandelbrot/mandelbrot.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/nw/needle.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/srad/srad.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/where/where.cu'
+      SubFeatureMap:   {}
+    get_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/srad/srad.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/where/where.cu'
+      SubFeatureMap:   {}
+    has_capability_or_fail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+      SubFeatureMap:   {}
+    select_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmmain.cu'
+      SubFeatureMap:   {}
+    typedef_event_ptr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/components.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/fdwt53.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/fdwt97.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/rdwt53.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/rdwt97.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_main.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/mandelbrot/mandelbrot.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/nw/needle.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/srad/srad.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/where/where.cu'
+      SubFeatureMap:   {}
+    typedef_queue_ptr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+      SubFeatureMap:   {}
+  dpct.hpp:
+    check_error_code:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/common/cudacommon.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/common/main.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/components.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_main.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmmain.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/lavamd/lavaMD.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/mandelbrot/mandelbrot.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/nw/needle.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/srad/srad.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/where/where.cu'
+      SubFeatureMap:   {}
+    dpct_compatibility_temp:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/transform_buffer.h'
+      SubFeatureMap:   {}
+  dpl_utils.hpp:
+    non_local_include_dependency:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/where/where.cu'
+      SubFeatureMap:   {}
+  image.hpp:
+    image_accessor_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+      SubFeatureMap:   {}
+    image_matrix:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+      SubFeatureMap:
+        image_matrix_to_pitched_data:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+    image_wrapper:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+      SubFeatureMap:
+        image_wrapper_get_access:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+    image_wrapper_base:
+      IsCalled:        false
+      SubFeatureMap:
+        image_wrapper_base_attach:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+        image_wrapper_base_get_channel:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+        image_wrapper_base_get_sampler:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_addressing_mode_filtering_mode_coordinate_normalization_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_addressing_mode_filtering_mode_is_normalized:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+    sampling_info:
+      IsCalled:        false
+      SubFeatureMap:
+        sampling_info_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+        sampling_info_set_addressing_mode_filtering_mode_coordinate_normalization_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+        sampling_info_set_addressing_mode_filtering_mode_is_normalized:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+        sampling_info_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+        sampling_info_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+          SubFeatureMap:   {}
+  math.hpp:
+    min_max:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+      SubFeatureMap:   {}
+  memory.hpp:
+    constant_memory_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+      SubFeatureMap:   {}
+    device_memory:
+      IsCalled:        false
+      SubFeatureMap:
+        device_memory_get_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d_double.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+          SubFeatureMap:   {}
+        device_memory_init:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d_double.cu'
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+          SubFeatureMap:   {}
+        device_memory_init_q:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+          SubFeatureMap:   {}
+    dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+      SubFeatureMap:   {}
+    dpct_memset:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/components.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_main.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+      SubFeatureMap:   {}
+    dpct_memset_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/components.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_main.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+      SubFeatureMap:   {}
+    dpct_memset_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/components.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_main.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+      SubFeatureMap:   {}
+    global_memory_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+      SubFeatureMap:   {}
+    memcpy_direction:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/gups/gups.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/sort/Sort.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/components.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/mandelbrot/mandelbrot.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/nw/needle.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/srad/srad.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/where/where.cu'
+      SubFeatureMap:   {}
+    pitched_data:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/devicememory/DeviceMemory.cu'
+      SubFeatureMap:   {}
+  rng_utils.hpp:
+    rng_generator_generate:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/camera.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/material.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+      SubFeatureMap:   {}
+  util.hpp:
+    err_types:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/u153009/altis_dpcpp/src/cuda/common/cudacommon.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level1/bfs/bfs.cu'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/u153009/altis_dpcpp/src/cuda/level2/srad/srad.cu'
+      SubFeatureMap:   {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/home/u153009/altis_dpcpp/src'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           '/home/u153009/altis_dpcpp/build'
+    Specified:       true
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  CustomHelperFileName:
+    Value:           dpct
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'true'
+    Specified:       true
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...

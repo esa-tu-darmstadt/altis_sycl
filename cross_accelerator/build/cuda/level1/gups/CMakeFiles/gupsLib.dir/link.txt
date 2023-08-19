@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgupsLib.a CMakeFiles/gupsLib.dir/gups.dp.cpp.o
+/usr/bin/ranlib libgupsLib.a

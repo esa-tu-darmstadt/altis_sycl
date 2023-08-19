@@ -1,0 +1,866 @@
+---
+MainSourceFile:  '/home/chr1s603/Documents/workspace/altis/build/dpct_out/cuda/level2/lavamd/lavaMD.h'
+Replacements:
+  - FilePath:        '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/lavaMD.h'
+    Offset:          357
+    Length:          0
+    ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/lavaMD.h'
+    Offset:          411
+    Length:          18
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/lavaMD.h'
+    Offset:          4049
+    Length:          0
+    ReplacementText: ' dpct_type_172291'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/lavaMD.h'
+    Offset:          4683
+    Length:          0
+    ReplacementText: ' dpct_type_126227'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+DpctVersion:     2022.1.0
+MainHelperFileName: dpct
+USMLevel:        ''
+FeatureMap:
+  atomic.hpp:
+    atomic_compare_exchange_strong:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+      FeatureName:     atomic_compare_exchange_strong
+      SubFeatureMap:   {}
+    atomic_fetch_add:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/yolo/src/blas_kernels.cu'
+      FeatureName:     atomic_fetch_add
+      SubFeatureMap:   {}
+    atomic_fetch_xor:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+      FeatureName:     atomic_fetch_xor
+      SubFeatureMap:   {}
+  blas_utils.hpp:
+    get_value:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+      FeatureName:     get_value
+      SubFeatureMap:   {}
+  device.hpp:
+    cpu_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/sort/Sort.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/mandelbrot/mandelbrot.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/srad/srad.cu'
+      FeatureName:     cpu_device
+      SubFeatureMap:   {}
+    dev_mgr:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/support.h'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/maxflops/MaxFlops.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/sort/Sort.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/mandelbrot/mandelbrot.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/nw/needle.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/srad/srad.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/where/where.cu'
+          FeatureName:     'dev_mgr::current_device_id'
+          SubFeatureMap:   {}
+        dev_mgr_device_count:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+          FeatureName:     'dev_mgr::device_count'
+          SubFeatureMap:   {}
+        dev_mgr_get_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/cudacommon.h'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/support.h'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/maxflops/MaxFlops.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/sort/Sort.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/mandelbrot/mandelbrot.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/nw/needle.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/srad/srad.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/where/where.cu'
+          FeatureName:     'dev_mgr::get_device'
+          SubFeatureMap:   {}
+        dev_mgr_select_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmmain.cu'
+          FeatureName:     'dev_mgr::select_device'
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_ext_create_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/sort/Sort.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+          FeatureName:     'device_ext::create_queue'
+          SubFeatureMap:   {}
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/support.h'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/sort/Sort.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_main.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/mandelbrot/mandelbrot.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/nw/needle.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/srad/srad.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/where/where.cu'
+          FeatureName:     'device_ext::default_queue'
+          SubFeatureMap:   {}
+        device_ext_destroy_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/sort/Sort.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+          FeatureName:     'device_ext::destroy_queue'
+          SubFeatureMap:   {}
+        device_ext_get_device_info_return_info:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/cudacommon.h'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/support.h'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/maxflops/MaxFlops.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/nw/needle.cu'
+          FeatureName:     'device_ext::get_device_info'
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/support.h'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/maxflops/MaxFlops.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d_double.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/components.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/fdwt53.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/fdwt97.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/rdwt53.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/rdwt97.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/mandelbrot/mandelbrot.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/nw/needle.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/srad/srad.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/where/where.cu'
+          FeatureName:     'device_ext::queues_wait_and_throw'
+          SubFeatureMap:   {}
+        device_ext_reset:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmmain.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+          FeatureName:     'device_ext::reset'
+          SubFeatureMap:   {}
+    device_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/cudacommon.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/support.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/nw/needle.cu'
+      FeatureName:     device_info
+      SubFeatureMap:
+        device_info_get_global_mem_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/support.h'
+          FeatureName:     'device_info::get_global_mem_size'
+          SubFeatureMap:   {}
+        device_info_get_local_mem_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+          FeatureName:     'device_info::get_local_mem_size'
+          SubFeatureMap:   {}
+        device_info_get_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/maxflops/MaxFlops.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+          FeatureName:     'device_info::get_major_version'
+          SubFeatureMap:   {}
+        device_info_get_max_clock_frequency:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+          FeatureName:     'device_info::get_max_clock_frequency'
+          SubFeatureMap:   {}
+        device_info_get_max_compute_units:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+          FeatureName:     'device_info::get_max_compute_units'
+          SubFeatureMap:   {}
+        device_info_get_max_nd_range_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+          FeatureName:     'device_info::get_max_nd_range_size'
+          SubFeatureMap:   {}
+        device_info_get_max_sub_group_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/cudacommon.h'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+          FeatureName:     'device_info::get_max_sub_group_size'
+          SubFeatureMap:   {}
+        device_info_get_max_work_group_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/cudacommon.h'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+          FeatureName:     'device_info::get_max_work_group_size'
+          SubFeatureMap:   {}
+        device_info_get_max_work_item_sizes:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+          FeatureName:     'device_info::get_max_work_item_sizes'
+          SubFeatureMap:   {}
+        device_info_get_max_work_items_per_compute_unit:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+          FeatureName:     'device_info::get_max_work_items_per_compute_unit'
+          SubFeatureMap:   {}
+        device_info_get_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/maxflops/MaxFlops.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+          FeatureName:     'device_info::get_minor_version'
+          SubFeatureMap:   {}
+        device_info_get_name:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+          FeatureName:     'device_info::get_name'
+          SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/main.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/support.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/sort/Sort.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/components.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/fdwt53.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/fdwt97.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/rdwt53.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/rdwt97.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_main.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmmain.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/mandelbrot/mandelbrot.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/nw/needle.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/srad/srad.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/where/where.cu'
+      FeatureName:     get_current_device
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/common/support.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/sort/Sort.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/components.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/fdwt53.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/fdwt97.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/rdwt53.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/rdwt97.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_main.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/lavaMD.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/mandelbrot/mandelbrot.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/nw/needle.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/srad/srad.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/where/where.cu'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+    get_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/sort/Sort.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/srad/srad.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/where/where.cu'
+      FeatureName:     get_device
+      SubFeatureMap:   {}
+  dpct.hpp:
+    dpct_compatibility_temp:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/transform_buffer.h'
+      FeatureName:     DPCT_COMPATIBILITY_TEMP
+      SubFeatureMap:   {}
+  dpl_utils.hpp:
+    non_local_include_dependency:
+      IsCalled:        true
+      CallerSrcFiles:
+        - ''
+      FeatureName:     ''
+      SubFeatureMap:   {}
+  image.hpp:
+    image_accessor_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+      FeatureName:     image_accessor_ext
+      SubFeatureMap:   {}
+    image_matrix:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+      FeatureName:     image_matrix
+      SubFeatureMap:
+        image_matrix_to_pitched_data:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'image_matrix::to_pitched_data'
+          SubFeatureMap:   {}
+    image_wrapper:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+      FeatureName:     image_wrapper
+      SubFeatureMap:
+        image_wrapper_attach:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'image_wrapper::attach'
+          SubFeatureMap:   {}
+        image_wrapper_get_access:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'image_wrapper::get_access'
+          SubFeatureMap:   {}
+    image_wrapper_base:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        image_wrapper_base_get_channel:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'image_wrapper_base::get_channel'
+          SubFeatureMap:   {}
+        image_wrapper_base_get_sampler:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'image_wrapper_base::get_sampler'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_addressing_mode_filtering_mode_coordinate_normalization_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_addressing_mode_filtering_mode_is_normalized:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+        image_wrapper_base_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'image_wrapper_base::set'
+          SubFeatureMap:   {}
+    sampling_info:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        sampling_info_set_addressing_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_addressing_mode_filtering_mode_coordinate_normalization_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_addressing_mode_filtering_mode_is_normalized:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_coordinate_normalization_mode_enum:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+        sampling_info_set_filtering_mode:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+          FeatureName:     'sampling_info::set'
+          SubFeatureMap:   {}
+  memory.hpp:
+    async_dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+      FeatureName:     async_dpct_memcpy
+      SubFeatureMap:   {}
+    async_dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+      FeatureName:     async_dpct_memcpy
+      SubFeatureMap:   {}
+    async_dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+      FeatureName:     async_dpct_memcpy
+      SubFeatureMap:   {}
+    constant_memory_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+      FeatureName:     constant_memory
+      SubFeatureMap:   {}
+    device_memory:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_memory_get_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d_double.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+          FeatureName:     'device_memory::get_ptr'
+          SubFeatureMap:   {}
+        device_memory_init:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d_double.cu'
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+          FeatureName:     'device_memory::init'
+          SubFeatureMap:   {}
+        device_memory_init_q:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+          FeatureName:     'device_memory::init'
+          SubFeatureMap:   {}
+    dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/sort/Sort.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/components.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/mandelbrot/mandelbrot.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/nw/needle.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/srad/srad.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/where/where.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/sort/Sort.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/components.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/mandelbrot/mandelbrot.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/nw/needle.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/srad/srad.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/where/where.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/sort/Sort.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/components.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/mandelbrot/mandelbrot.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/nw/needle.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/srad/srad.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/where/where.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memset:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/components.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_main.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/components.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_main.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/components.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_main.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    global_memory_alias:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+      FeatureName:     global_memory
+      SubFeatureMap:   {}
+    memcpy_direction:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeeddownload/BusSpeedDownload.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/busspeedreadback/BusSpeedReadback.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/maxflops/MaxFlops.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/bfs/bfs.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gemm/Gemm.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/gups/gups.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/pathfinder/pathfinder.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level1/sort/Sort.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/cfd/pre_euler3d_double.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/components.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/dwt2d/dwt_cuda/common.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/fdtd2d/fdtd2d.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/kmeans/kmeansraw.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/lavamd/kernel/kernel_gpu_cuda_wrapper.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/mandelbrot/mandelbrot.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/nw/needle.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_float_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/particlefilter/ex_particle_CUDA_naive_seq.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/srad/srad.cu'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/where/where.cu'
+      FeatureName:     memcpy_direction
+      SubFeatureMap:   {}
+    pitched_data:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level0/devicememory/DeviceMemory.cu'
+      FeatureName:     pitched_data
+      SubFeatureMap:   {}
+  rng_utils.hpp:
+    rng_generator_generate:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/raytracing/raytracing_cuda/camera.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/raytracing/raytracing_cuda/material.h'
+        - '/home/chr1s603/Documents/workspace/altis/src/cuda/level2/raytracing/raytracing_cuda/raytracing.cu'
+      FeatureName:     'rng_generator::generate'
+      SubFeatureMap:   {}
+CompileTargets:  {}
+OptionMap:
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           '/home/chr1s603/Documents/workspace/altis/build'
+    Specified:       true
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  CustomHelperFileName:
+    Value:           dpct
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'true'
+    Specified:       true
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...

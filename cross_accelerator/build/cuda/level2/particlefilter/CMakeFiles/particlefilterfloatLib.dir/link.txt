@@ -1,0 +1,2 @@
+/usr/bin/ar qc libparticlefilterfloatLib.a CMakeFiles/particlefilterfloatLib.dir/ex_particle_CUDA_float_seq.dp.cpp.o
+/usr/bin/ranlib libparticlefilterfloatLib.a

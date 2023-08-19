@@ -1,0 +1,5 @@
+dpct_output/build/*
+optimized/build/*
+unoptimized/build/*
+*/.vscode/*
+.vscode/*

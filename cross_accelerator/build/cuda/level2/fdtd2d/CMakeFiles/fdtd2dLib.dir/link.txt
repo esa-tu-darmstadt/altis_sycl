@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfdtd2dLib.a CMakeFiles/fdtd2dLib.dir/fdtd2d.dp.cpp.o
+/usr/bin/ranlib libfdtd2dLib.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcfddoubleLib.a CMakeFiles/cfddoubleLib.dir/euler3d_double.dp.cpp.o
+/usr/bin/ranlib libcfddoubleLib.a

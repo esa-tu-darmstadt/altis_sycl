@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblavamdLib.a CMakeFiles/lavamdLib.dir/lavaMD.dp.cpp.o CMakeFiles/lavamdLib.dir/kernel/kernel_gpu_cuda_wrapper.dp.cpp.o
+/usr/bin/ranlib liblavamdLib.a

@@ -1,0 +1,59 @@
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Copyright (C) Intel Corporation
+//
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+// This file incorporates work covered by the following copyright and permission
+// notice:
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+//
+//===----------------------------------------------------------------------===//
+
+#ifndef __ONEDPL_complex
+#define __ONEDPL_complex
+
+#include "oneapi/dpl/internal/common_config.h"
+#include <complex>
+
+namespace oneapi
+{
+namespace dpl
+{
+using ::std::complex;
+
+using ::std::abs;
+using ::std::acos;
+using ::std::acosh;
+using ::std::arg;
+using ::std::asin;
+using ::std::asinh;
+using ::std::atan;
+using ::std::atanh;
+using ::std::conj;
+using ::std::cos;
+using ::std::cosh;
+using ::std::exp;
+using ::std::imag;
+using ::std::log;
+using ::std::log10;
+using ::std::norm;
+using ::std::polar;
+using ::std::pow;
+using ::std::proj;
+using ::std::real;
+using ::std::sin;
+using ::std::sinh;
+using ::std::sqrt;
+using ::std::tan;
+using ::std::tanh;
+
+} // namespace dpl
+} // namespace oneapi
+
+namespace dpl = oneapi::dpl;
+
+#endif // __ONEDPL_complex

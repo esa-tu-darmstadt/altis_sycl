@@ -1,0 +1,162 @@
+// -*- C++ -*-
+//===----------------------------------------------------------------------===//
+//
+// Copyright (C) Intel Corporation
+//
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+// This file incorporates work covered by the following copyright and permission
+// notice:
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+//
+//===----------------------------------------------------------------------===//
+
+#ifndef _ONEDPL_ALGORITHM
+#define _ONEDPL_ALGORITHM
+
+#include "oneapi/dpl/internal/common_config.h"
+// ATTENTION!!! Include the header from the C++ standard library before the oneDPL config header to see whether the _PSTL_VERSION macro is defined
+#include <algorithm>
+#include "oneapi/dpl/pstl/onedpl_config.h"
+#include "oneapi/dpl/internal/serial_algorithm_impl.h"
+
+#if !_ONEDPL_ALGORITHM_FORWARD_DECLARED
+// If not declared, pull in forward declarations
+#    include "oneapi/dpl/pstl/glue_algorithm_defs.h"
+#    include "oneapi/dpl/internal/by_segment_extension_defs.h"
+#    include "oneapi/dpl/internal/binary_search_extension_defs.h"
+#    define _ONEDPL_ALGORITHM_FORWARD_DECLARED 1
+#endif // !_ONEDPL_ALGORITHM_FORWARD_DECLARED
+
+#if _ONEDPL_EXECUTION_POLICIES_DEFINED
+// If <execution> has already been included, pull in implementations
+#    include "oneapi/dpl/pstl/glue_algorithm_impl.h"
+
+#    include "oneapi/dpl/internal/exclusive_scan_by_segment_impl.h"
+#    include "oneapi/dpl/internal/inclusive_scan_by_segment_impl.h"
+#    include "oneapi/dpl/internal/binary_search_impl.h"
+#    include "oneapi/dpl/internal/reduce_by_segment_impl.h"
+#endif // _ONEDPL_EXECUTION_POLICIES_DEFINED
+
+// Due to mutual names injection (from oneapi::dpl:: to std:: and vice versa)
+// a Clang compiler (< 13.0) might mistakenly issue a "conflicting declarations" error
+// Please see glue_algorithm_defs.h (e.g. is_heap) for a workaround.
+namespace std
+{
+using oneapi::dpl::adjacent_find;
+using oneapi::dpl::all_of;
+using oneapi::dpl::any_of;
+using oneapi::dpl::copy;
+using oneapi::dpl::copy_if;
+using oneapi::dpl::copy_n;
+using oneapi::dpl::count;
+using oneapi::dpl::count_if;
+using oneapi::dpl::equal;
+using oneapi::dpl::fill;
+using oneapi::dpl::fill_n;
+using oneapi::dpl::find;
+using oneapi::dpl::find_end;
+using oneapi::dpl::find_first_of;
+using oneapi::dpl::find_if;
+using oneapi::dpl::find_if_not;
+using oneapi::dpl::for_each;
+using oneapi::dpl::for_each_n;
+using oneapi::dpl::generate;
+using oneapi::dpl::generate_n;
+using oneapi::dpl::includes;
+using oneapi::dpl::inplace_merge;
+using oneapi::dpl::is_heap;
+using oneapi::dpl::is_heap_until;
+using oneapi::dpl::is_partitioned;
+using oneapi::dpl::is_sorted;
+using oneapi::dpl::is_sorted_until;
+using oneapi::dpl::lexicographical_compare;
+using oneapi::dpl::max_element;
+using oneapi::dpl::merge;
+using oneapi::dpl::min_element;
+using oneapi::dpl::minmax_element;
+using oneapi::dpl::mismatch;
+using oneapi::dpl::move;
+using oneapi::dpl::none_of;
+using oneapi::dpl::nth_element;
+using oneapi::dpl::partial_sort;
+using oneapi::dpl::partial_sort_copy;
+using oneapi::dpl::partition;
+using oneapi::dpl::partition_copy;
+using oneapi::dpl::remove;
+using oneapi::dpl::remove_copy;
+using oneapi::dpl::remove_copy_if;
+using oneapi::dpl::remove_if;
+using oneapi::dpl::replace;
+using oneapi::dpl::replace_copy;
+using oneapi::dpl::replace_copy_if;
+using oneapi::dpl::replace_if;
+using oneapi::dpl::reverse;
+using oneapi::dpl::reverse_copy;
+using oneapi::dpl::rotate;
+using oneapi::dpl::rotate_copy;
+using oneapi::dpl::search;
+using oneapi::dpl::search_n;
+using oneapi::dpl::set_difference;
+using oneapi::dpl::set_intersection;
+using oneapi::dpl::set_symmetric_difference;
+using oneapi::dpl::set_union;
+using oneapi::dpl::shift_left;
+using oneapi::dpl::shift_right;
+using oneapi::dpl::sort;
+using oneapi::dpl::stable_partition;
+using oneapi::dpl::stable_sort;
+using oneapi::dpl::swap_ranges;
+using oneapi::dpl::transform;
+using oneapi::dpl::unique;
+using oneapi::dpl::unique_copy;
+} // namespace std
+
+namespace oneapi
+{
+namespace dpl
+{
+using ::std::all_of;
+using ::std::any_of;
+using ::std::binary_search;
+using ::std::copy;
+using ::std::copy_backward;
+using ::std::copy_if;
+using ::std::copy_n;
+using ::std::count;
+using ::std::count_if;
+using ::std::equal_range;
+using ::std::fill;
+using ::std::fill_n;
+using ::std::find;
+using ::std::find_if;
+using ::std::find_if_not;
+using ::std::for_each;
+using ::std::generate;
+using ::std::generate_n;
+using ::std::is_heap;
+using ::std::is_heap_until;
+using ::std::is_permutation;
+using ::std::is_sorted;
+using ::std::is_sorted_until;
+using ::std::lower_bound;
+using ::std::make_heap;
+using ::std::max;
+using ::std::min;
+using ::std::move;
+using ::std::move_backward;
+using ::std::none_of;
+using ::std::partial_sort;
+using ::std::partial_sort_copy;
+using ::std::pop_heap;
+using ::std::push_heap;
+using ::std::transform;
+using ::std::upper_bound;
+} // namespace dpl
+
+} // namespace oneapi
+namespace dpl = oneapi::dpl;
+
+#endif // _ONEDPL_ALGORITHM

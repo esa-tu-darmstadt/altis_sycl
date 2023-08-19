@@ -1,0 +1,2 @@
+/usr/bin/ar qc libraytracingLib.a CMakeFiles/raytracingLib.dir/raytracing.dp.cpp.o
+/usr/bin/ranlib libraytracingLib.a
