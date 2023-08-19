@@ -1,2 +1,0 @@
-/usr/bin/ar qc libnwLib.a CMakeFiles/nwLib.dir/needle.dp.cpp.o
-/usr/bin/ranlib libnwLib.a

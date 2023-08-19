@@ -1,2 +1,0 @@
-/usr/bin/ar qc libparticlefilterLib.a CMakeFiles/particlefilterLib.dir/ex_particle_CUDA_naive_seq.dp.cpp.o
-/usr/bin/ranlib libparticlefilterLib.a

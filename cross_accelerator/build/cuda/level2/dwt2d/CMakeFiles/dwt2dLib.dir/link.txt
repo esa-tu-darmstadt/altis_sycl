@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdwt2dLib.a CMakeFiles/dwt2dLib.dir/dwt_main.dp.cpp.o CMakeFiles/dwt2dLib.dir/dwt.dp.cpp.o CMakeFiles/dwt2dLib.dir/components.dp.cpp.o CMakeFiles/dwt2dLib.dir/dwt_cuda/fdwt53.dp.cpp.o CMakeFiles/dwt2dLib.dir/dwt_cuda/fdwt97.dp.cpp.o CMakeFiles/dwt2dLib.dir/dwt_cuda/rdwt97.dp.cpp.o CMakeFiles/dwt2dLib.dir/data/bmp.cpp.o
-/usr/bin/ranlib libdwt2dLib.a

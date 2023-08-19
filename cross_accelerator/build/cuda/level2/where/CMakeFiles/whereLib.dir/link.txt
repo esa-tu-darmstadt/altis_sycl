@@ -1,2 +1,0 @@
-/usr/bin/ar qc libwhereLib.a CMakeFiles/whereLib.dir/where.dp.cpp.o
-/usr/bin/ranlib libwhereLib.a

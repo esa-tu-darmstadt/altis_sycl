@@ -1,2 +1,0 @@
-/usr/bin/ar qc libAltisCommon.a CMakeFiles/AltisCommon.dir/ResultDatabase.cpp.o CMakeFiles/AltisCommon.dir/OptionParser.cpp.o CMakeFiles/AltisCommon.dir/Option.cpp.o CMakeFiles/AltisCommon.dir/ProgressBar.cpp.o
-/usr/bin/ranlib libAltisCommon.a

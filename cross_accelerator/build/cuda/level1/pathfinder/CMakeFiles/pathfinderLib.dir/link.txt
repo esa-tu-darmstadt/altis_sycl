@@ -1,2 +1,0 @@
-/usr/bin/ar qc libpathfinderLib.a CMakeFiles/pathfinderLib.dir/pathfinder.dp.cpp.o
-/usr/bin/ranlib libpathfinderLib.a

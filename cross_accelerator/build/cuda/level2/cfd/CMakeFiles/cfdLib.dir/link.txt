@@ -1,2 +1,0 @@
-/usr/bin/ar qc libcfdLib.a CMakeFiles/cfdLib.dir/euler3d.dp.cpp.o
-/usr/bin/ranlib libcfdLib.a
