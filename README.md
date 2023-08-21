@@ -33,41 +33,41 @@ Note that the **Mandelbrot** benchmark currently requires separate builds for ea
 See section [Benchmark Parameters](#benchmark-parameters).
 
 # Build Process
-cd into the desired directory. In the CMakeLists.txt, use CMake environment variables to target x86 CPUs and Intel GPUs (default, USE_CUDA and USE_FPGA variables are commented out), CUDA GPUs (uncomment USE_CUDA variable, comment USE_FPGA variable) or FPGAs (uncomment USE_FPGA variable, comment USE_CUDA variable) respectively. Currently, only one target can be active at once. When building for FPGAs, be sure the BSP locations and exact part numbers in the CMake file are correct. Then, create a build folder and navigate into it, run
+Move into any of the above directories: `cross_accelerator` or `fpga_optimized`. In the `CMakeLists.txt`, use CMake environment variables to target x86 CPUs and Intel GPUs (by default, the `USE_CUDA` and `USE_FPGA` variables are commented out), CUDA GPUs (uncomment `USE_CUDA`, comment out `USE_FPGA`) or FPGAs (uncomment `USE_FPGA`, comment out `USE_CUDA`) respectively. Currently, only one target can be active at once. When building for FPGAs, be sure that the BSP locations and exact part numbers in the CMake file are correct. Then, create a build folder and navigate into it, and run:
 
-> cmake ..
+```
+cmake ..
+```
 
-Then you can build the specific benchmarks. On CPUs and GPUs this looks like the following:
+Then you can build the specific benchmarks. On CPUs and GPUs, this looks like the following:
 
-> make cfd
+```
+make cfd
+make fdtd2d
+make lavamd
+```
 
-> make fdtd2d
-
-> make lavamd
-
-When targeting FPGAs, you can build a seperate HLS report (Takes minutes, recommended before starting HW-build).
-Or target the Intel FPGA emulator (Takes also just minutes).
-Or the final binary (Takes hours for Stratix10 around 4h-24h).
+When targeting FPGAs, you can build a separate HLS report (that takes minutes, and thus, it is recommended before starting a hardware build). Or target the Intel FPGA emulator (that takes also just minutes). Or the FPGA bitstream (that for Stratix10 takes around 4h-24h).
 The FPGA targets have the following structure:
 
-> make cfdLib_fpga_report
+```
+make cfdLib_fpga_report
+make cfdLib_fpga_emu
+make cfdLib_fpga
+```
 
-> make cfdLib_fpga_emu
-
-> make cfdLib_fpga
-
-In the CMakeLists.txt for each benchmark, you can pass some properties to the compiler by appending them to COMPILE_FLAGS or LINK_FLAGS:
-- -Xsseed=42 -> Use this when you get timing errors
-- -Xsprofile -> Use this to build a profiling build. Careful: These will be larger as normal ones, large designs might no longer fit.
-- -Xsclock=42MHz -> Playing around with this might let difficult designs build, use this when Xsseed does not fix possible timing failures. If this also dont help, be sure the design is "routable" by looking in the report's kernel memory section. Congestion on a variable might be the issue here.
+In the `CMakeLists.txt` for each benchmark, you can pass some properties to the compiler by appending them to `COMPILE_FLAGS` or `LINK_FLAGS`:
+- `-Xsseed=42` -> Use this when you get timing errors
+- `-Xsprofile` -> Use this to build a profiling build. Careful: These will be larger as normal ones, large designs might no longer fit.
+- `-Xsclock=42MHz` -> Playing around with this might let difficult designs build, use this when using `-Xsseed` does not fix possible timing failures. If this also dont help, be sure the design is "routable" by looking in the report's kernel memory section. Congestion on a variable might be the issue here.
 
 ## Benchmark Parameters
-Pass --size/-s to select between input sizes: 1, 2 and 3 (FPGA kernels only optimized for sizes <= 3). Default is 1.
-Pass -n to change how often a benchmark should be run. Default is 10.
+Pass `--size`/`-s` to select between input sizes: 1, 2 and 3 (FPGA kernels are only optimized for sizes <= 3). Default is 1.
+Pass `-n` to change how often a benchmark should be run. Default is 10.
 
-NOTE:
-kMeans and FDTD2D do not support -n argument.
-kMeans does not support --size argument. Use --inputFile here, pointing for instance to the files we used in the kmeans_inputs directory.
+_Note_:
+- **kMeans** and **FDTD2D** do not support the `-n` argument.
+- **kMeans** does not support the `--size` argument. Use instead `--inputFile`, which points for instance to any of the files in the [`kmeans_inputs`](kmeans_inputs/) directory.
 
 ## Run Benchmarks on CPU or GPU
 
