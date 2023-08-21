@@ -1,8 +1,8 @@
 # Altis-SYCL
 
-Altis-SYCL is a SYCL-based implementation of the Altis GPGPU benchmark suite (https://github.com/utcs-scea/altis) (originally written in CUDA) for CPUs, GPUs, and FPGAs.
+Altis-SYCL is a SYCL-based implementation of the [Altis GPGPU benchmark suite](https://github.com/utcs-scea/altis) (originally written in CUDA) for CPUs, GPUs, and FPGAs.
 
-Altis-SYCL has been migrated from CUDA using the [DPC++ Compatibility Tool](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compatibility-tool.html) of oneAPI 2022.1. Our main focus has been to evaluate the performance of these GPU-tailored SYCL kernels and investigate their optimization potential on FPGAs. For some cases, minor changes were made to speedup the FPGA port as our interest lies in the achievable performance without major rework of the kernels.
+Altis-SYCL has been migrated from CUDA using the [DPC++ Compatibility Tool](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compatibility-tool.html) of oneAPI 2022.1. Our main focus has been to evaluate the performance of these GPU-tailored SYCL kernels and to investigate their optimization potential for FPGAs. For some cases, minor changes were made to speedup the FPGA port as our interest lies in the achievable performance without major rework of the kernels.
 
 The [`benchmarks.md`](benchmarks.md) file contains a portion of our benchmark results with various accelerators.
 
@@ -23,11 +23,11 @@ Runs correctly on the following hardware:
 * Intel FPGAs (Stratix 10, Agilex)- when `USE_FPGA & (USE_STRATIX | USE_AGILEX)` CMake variables are set
 
 ## fpga_optimized
-Contains optimized FPGA versions of level 2 benchmarks. Due to FPGA optimization attributes present in code, it can no longer be executed on CPU or GPUs! It is however possible to execute them using the Intel FPGA Emulator and Simulator on regular CPUs. The optimization attributes were validated under oneAPI 22.3.0. The more recent 23.0.0 version failed to achieve the same loop II's on some benchmarks. Note that we currently have no optimized version for the DWT2D benchmark due to congestion on shared memory.
+Contains optimized FPGA versions of level 2 benchmarks. Due to FPGA optimization attributes present in code, it can no longer be executed on CPU or GPUs! It is however possible to execute them using the Intel FPGA Emulator and Simulator on regular CPUs. The optimization attributes were validated under oneAPI 22.3.0. The more recent 23.0.0 version failed to achieve the same loop II's on some benchmarks. Note that we currently have no optimized version for the **DWT2D** benchmark due to congestion on shared memory.
 
-The optimized code is tailored for the BittWare 520N card featuring the Stratix 10 FPGA. Agilex support only encompasses slight modifications of the code to make the design utilize FPGA resources more efficiently. For instance, **CFD64**: for Stratix 10, the kernel could be vectorized 2-times. For Agilex, we needed to remove vectorizazion to fit the design on device. On the other hand, **CFD32** could be replicated more on Agilex than using the Stratix FPGA.
+The optimized code is tailored for the BittWare 520N card featuring the Stratix 10 FPGA. Agilex support only encompasses slight modifications of the code to make the design utilize FPGA resources more efficiently. For instance, **CFD64**: for Stratix 10, the kernel could be vectorized 2-times. For Agilex, we needed to remove vectorization to fit the design on device. On the other hand, **CFD32** could be replicated more on Agilex than on Stratix 10.
 
-Note that the **Mandelbrot** benchmark currently requires separate builds for each problem size, see [`mandelbrot.dp.cpp`](fpga_optimized/cuda/level2/mandelbrot/mandelbrot.dp.cpp#L42).
+Note that the **Mandelbrot** benchmark currently requires separate builds for each problem size. See [`mandelbrot.dp.cpp`](fpga_optimized/cuda/level2/mandelbrot/mandelbrot.dp.cpp#L42).
 
 ## kmeans_inputs
 See section [Benchmark Parameters](#benchmark-parameters).
