@@ -43,7 +43,13 @@ Then you can build the specific benchmarks. On CPUs and GPUs, this looks like th
 
 ```
 make cfd
+```
+
+```
 make fdtd2d
+```
+
+```
 make lavamd
 ```
 
@@ -52,7 +58,13 @@ The FPGA targets have the following structure:
 
 ```
 make cfdLib_fpga_report
+```
+
+```
 make cfdLib_fpga_emu
+```
+
+```
 make cfdLib_fpga
 ```
 
@@ -71,28 +83,45 @@ _Note_:
 
 ## Run Benchmarks on CPU or GPU
 
-For CPUs and GPUs, the binaries are in the build/bin/levelX folders.
-Pass --gpu to use a GPU present on the host (if --gpu is omitted, te host CPU is used):
+For CPUs and GPUs, the binaries are under the `build/bin/levelX` folders.
+Pass `--gpu` to use a GPU present on the host (if `--gpu` is omitted, the host CPU is used):
 
-> ./bin/level2/lavamd
+```
+./bin/level2/lavamd
+```
 
-> ./bin/level2/lavamd --gpu
+```
+./bin/level2/lavamd --gpu
+```
 
-> ./bin/level2/lavamd --size 2
+```
+./bin/level2/lavamd --size 2
+```
 
-Note that when building with CUDA support, the benchmarks currently do not run on other accelerators then the specified CUDA architecture in the CMake file. To support older NVIDIA GPUs (feature level < 75) or to also compile kernels for CPUs, change the compiler arguments.
+_Note_:
+
+When building with CUDA support, the benchmarks currently do not run on other accelerators than the specified CUDA architecture in the CMake file. To support older NVIDIA GPUs (feature level < 75) or to also compile kernels for CPUs, change the compiler arguments.
 
 ## Run Benchmarks on FPGA or FPGA emulator
-For FPGAs, the binaries are located in the build/cuda/levelX/benchmarkX folders.
-Pass --fpga to use the FPGA or --fpga_emu to use the emulator. If you try to run e.g., a FPGA binary on an emulator or the CPU, you will get a INVALID_BINARY error message.
+For FPGAs, the binaries are located under the `build/cuda/levelX/benchmarkX` folders.
+Pass `--fpga` to use the FPGA or `--fpga_emu` to use the emulator. If you try to run e.g., a FPGA bitstream on an emulator or the CPU, you will get a INVALID_BINARY error message.
 
-> ./cuda/level2/srad/sradLib.fpga --fpga -s 1
+```
+./cuda/level2/srad/sradLib.fpga --fpga -s 1
+```
 
-> ./cuda/level2/srad/sradLib.fpga --fpga -s 2
+```
+./cuda/level2/srad/sradLib.fpga --fpga -s 2
+```
 
-> ./cuda/level2/nw/nwLib.fpga_emu --fpga_emu -s 3
+```
+./cuda/level2/nw/nwLib.fpga_emu --fpga_emu -s 3
+```
 
-The reports are in the build/cuda/levelX/benchmarkX/benchmarkXLib_report.prj/reports folder (report-build) or the build/cuda/levelX/benchmarkX/benchmarkXLib.prj/reports folder (hw-build).
+The reports are placed under the `build/cuda/levelX/benchmarkX/benchmarkXLib_report.prj/reports` folder (report-build) or the `build/cuda/levelX/benchmarkX/benchmarkXLib.prj/reports` folder (hw-build).
 
 For profiling use
-> aocl profile ./cuda/level2/srad/sradLib.fpga --fpga -s 1 -n 1
+
+```
+aocl profile ./cuda/level2/srad/sradLib.fpga --fpga -s 1 -n 1
+```
