@@ -1,6 +1,10 @@
 # Altis-SYCL
 
-SYCL implementation of the Altis GPGPU benchmark suite (https://github.com/utcs-scea/altis). Migrated from CUDA using the DPC++ Compatibility Tool of oneAPI 2022.1. Contains also a portion of our benchmark results with various accelerators in the benchmarks.md file. A major focus was to determine the expected performance of GPU-tailored kernels on FPGAs. Also, the optimization potential of these GPU-tailored kernels on FPGAs was investigated. Only comparably minor changes were made to speed up the FPGA port, our interest lied in the achievable performance without major rework of the kernels.
+Altis-SYCL is a SYCL-based implementation of the Altis GPGPU benchmark suite (https://github.com/utcs-scea/altis) (originally written in CUDA) for CPUs, GPUs, and FPGAs.
+
+Altis-SYCL has been migrated from CUDA using the [DPC++ Compatibility Tool](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compatibility-tool.html) of oneAPI 2022.1. Our main focus has been to evaluate the performance of these GPU-tailored SYCL kernels and investigate their optimization potential on FPGAs. For some cases, minor changes were made to speedup the FPGA port as our interest lies in the achievable performance without major rework of the kernels.
+
+The [`benchmarks.md`](benchmarks.md) file contains a portion of our benchmark results with various accelerators.
 
 # Directory Structure
 
@@ -10,23 +14,23 @@ Contains the unmodified output of the DPCT migration tool. Does not compile.
 ## cross_accelerator
 Running and validated level 2 benchmarks. All annotations of DPCT were addressed. Removal of unwanted features, e.g., support for USM in benchmarks, or CUDA Graphs. Removed all DPCT library usages to support event-based timing measurements. For CUDA/SYCL performance comparisons, level 1 benchmarks are also included. These are, however, only tested on NVIDIA GPUs using the CUDA backend of DPCT.
 
-The benchmarks were changed to close original CUDA and SYCL performance on an RTX 2080 GPU. These changes encompass e.g., removal of loop-unrolling and altering inlining behaviour of functions due to differences in nvcc and dpc++ compilers.
+The benchmarks were changed to close original CUDA and SYCL performance on an RTX 2080 GPU. These changes encompass e.g., removal of loop-unrolling and altering inlining behaviour of functions due to differences in NVCC and DPC++ compilers.
 
 Runs correctly on the following hardware:
 * Intel and AMD x64 CPUs (tested on Ryzen, Epyc, Core i and Xeons) - by default
 * Intel GPUs - by default
-* NVIDIA GPUs using the DPC++ CUDA backend - when USE_CUDA CMake variable is set
-* Intel FPGAs (Stratix10, Agilex7)- when USE_FPGA & (USE_STRATIX | USE_AGILEX) CMake variables are set
+* NVIDIA GPUs using the DPC++ CUDA backend - when `USE_CUDA` CMake variable is set
+* Intel FPGAs (Stratix 10, Agilex)- when `USE_FPGA & (USE_STRATIX | USE_AGILEX)` CMake variables are set
 
 ## fpga_optimized
-Contains optimized FPGA versions of level 2 benchmarks. Due to FPGA optimization attributes peresent in code, it can no longer be executed on CPU or GPUs! It is however possible to execute them using the Intel FPGA Emulator and Simulator on regular CPUs. The optimization attributes were validated under oneAPI 22.3.0. The more recent 23.0.0 version failed to achieve the same loop II's on some benchmarks. Note that we currently have no optimized version for the DWT2D benchmark due to congestion on shared memory.
+Contains optimized FPGA versions of level 2 benchmarks. Due to FPGA optimization attributes present in code, it can no longer be executed on CPU or GPUs! It is however possible to execute them using the Intel FPGA Emulator and Simulator on regular CPUs. The optimization attributes were validated under oneAPI 22.3.0. The more recent 23.0.0 version failed to achieve the same loop II's on some benchmarks. Note that we currently have no optimized version for the DWT2D benchmark due to congestion on shared memory.
 
-The optimized code is tailored for the BittWare 520N card featuring the Stratix10 FPGA. Agilex support only encompasses slight modifications of the code to make the design utilize FPGA resources more efficiently. CFD64 for instance: Using Stratix10, the kernel could be vectorized 2-times. On Agilex, we needed to remove vectorizazion to make the design fit. On the other hand, CFD32 could be replicated more on Agilex than using the Stratix FPGA.
+The optimized code is tailored for the BittWare 520N card featuring the Stratix 10 FPGA. Agilex support only encompasses slight modifications of the code to make the design utilize FPGA resources more efficiently. For instance, **CFD64**: for Stratix 10, the kernel could be vectorized 2-times. For Agilex, we needed to remove vectorizazion to fit the design on device. On the other hand, **CFD32** could be replicated more on Agilex than using the Stratix FPGA.
 
-Note that the Mandelbrot benchmark currently requires seperate builds for each problem size, see mandelbrot.dp.cpp.
+Note that the **Mandelbrot** benchmark currently requires separate builds for each problem size, see [`mandelbrot.dp.cpp`](fpga_optimized/cuda/level2/mandelbrot/mandelbrot.dp.cpp#L42).
 
 ## kmeans_inputs
-See section "Benchmark Parameters".
+See section [Benchmark Parameters](#benchmark-parameters).
 
 # Build Process
 cd into the desired directory. In the CMakeLists.txt, use CMake environment variables to target x86 CPUs and Intel GPUs (default, USE_CUDA and USE_FPGA variables are commented out), CUDA GPUs (uncomment USE_CUDA variable, comment USE_FPGA variable) or FPGAs (uncomment USE_FPGA variable, comment USE_CUDA variable) respectively. Currently, only one target can be active at once. When building for FPGAs, be sure the BSP locations and exact part numbers in the CMake file are correct. Then, create a build folder and navigate into it, run
