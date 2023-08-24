@@ -52,7 +52,7 @@ See section [Benchmark Parameters](#benchmark-parameters).
 
 Currently, only one target can be active at once. When building for FPGAs, be sure that the BSP locations and exact part numbers in the CMake file are correct. 
 
-3. Then, create a build folder and navigate into it, and run:
+3. Create a `build` folder and move into it, and then run:
 
 ```
 cmake ..
