@@ -94,7 +94,7 @@ make cfdLib_fpga
 In the `CMakeLists.txt` for each benchmark, you can pass some options to the compiler by appending them to `COMPILE_FLAGS` or `LINK_FLAGS`:
 - `-Xsseed=42`: use this when you get timing errors
 - `-Xsprofile`: use this to build a profiling build. Careful: These will be larger as normal ones, large designs might no longer fit.
-- `-Xsclock=42MHz`: playing around with this might let difficult designs build, use this when using `-Xsseed` does not fix possible timing failures. If this also dont help, be sure the design is "routable" by looking in the report's kernel memory section. Congestion on a variable might be the issue here.
+- `-Xsclock=42MHz`: playing around with this might let difficult designs build, use this when using `-Xsseed` does not fix possible timing failures. If this does not help, be sure the design is "routable" by looking in the report's kernel memory section. Congestion on a variable might be the issue here.
 
 ## Benchmark Parameters
 Pass `--size`/`-s` to select between input sizes: 1, 2 and 3 (FPGA kernels are only optimized for sizes <= 3). Default is 1.
