@@ -16,7 +16,7 @@ Running and validated _level 2_ benchmarks.
 
 All DPCT-inserted warnings were addressed. Non-required features were removed, e.g., support for USM in benchmarks, or CUDA Graphs. Removed all DPCT library usages to support event-based timing measurements. 
 
-For benchmarking the performance between CUDA and SYCL, _level 1_ benchmarks are also included. However, these were only tested on NVIDIA GPUs using the CUDA backend of DPCT.
+For comparing the performance between CUDA and SYCL, _level 1_ benchmarks are also included. However, these were only tested on NVIDIA GPUs using the CUDA backend of DPCT.
 
 The benchmarks were adapted to close the performance gap between the original CUDA and the migrated SYCL codes on an RTX 2080 GPU. These adaptations encompass e.g., removal of loop-unrolling and altering inlining behaviour of functions due to differences in NVCC and DPC++ compilers.
 
