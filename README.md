@@ -38,6 +38,7 @@ The optimized code is tailored for the BittWare 520N card featuring the Stratix 
 - **CFD32**: could be replicated more on Agilex than on Stratix 10.
 
 _Note_:
+
 Currently, the **Mandelbrot** benchmark requires separate builds for each problem size. See [`mandelbrot.dp.cpp`](fpga_optimized/cuda/level2/mandelbrot/mandelbrot.dp.cpp#L42).
 
 ## kmeans_inputs
