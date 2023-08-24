@@ -21,10 +21,10 @@ For comparing the performance between CUDA and SYCL, _level 1_ benchmarks are al
 The benchmarks were adapted to close the performance gap between CUDA and SYCL on an RTX 2080 GPU. These adaptations encompass e.g., removal of loop-unrolling and altering inlining behaviour of functions due to differences in NVCC and DPC++ compilers.
 
 Runs correctly on the following hardware:
-* Intel and AMD x64 CPUs (tested on Ryzen, Epyc, Core i and Xeons) - by default
+* Intel and AMD x64 CPUs (Ryzen, Epyc, Core i and Xeon) - by default
 * Intel GPUs - by default
 * NVIDIA GPUs using the DPC++ CUDA backend - when `USE_CUDA` CMake variable is set
-* Intel FPGAs (Stratix 10, Agilex)- when `USE_FPGA & (USE_STRATIX | USE_AGILEX)` CMake variables are set
+* Intel FPGAs (Stratix 10, Agilex) - when `USE_FPGA & (USE_STRATIX | USE_AGILEX)` CMake variables are set
 
 ## fpga_optimized
 Contains optimized FPGA versions of _level 2_ benchmarks. 
