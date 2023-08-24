@@ -37,7 +37,8 @@ The optimized code is tailored for the BittWare 520N card featuring the Stratix 
 - **CFD64**: for Stratix 10, the kernel could be vectorized 2-times. For Agilex, vectorization was disabled to fit the design on device.
 - **CFD32**: could be replicated more on Agilex than on Stratix 10.
 
-Note that the **Mandelbrot** benchmark currently requires separate builds for each problem size. See [`mandelbrot.dp.cpp`](fpga_optimized/cuda/level2/mandelbrot/mandelbrot.dp.cpp#L42).
+_Note_:
+Currently, the **Mandelbrot** benchmark requires separate builds for each problem size. See [`mandelbrot.dp.cpp`](fpga_optimized/cuda/level2/mandelbrot/mandelbrot.dp.cpp#L42).
 
 ## kmeans_inputs
 See section [Benchmark Parameters](#benchmark-parameters).
@@ -98,11 +99,11 @@ In the `CMakeLists.txt` for each benchmark, you can pass some options to the com
 
 ## Benchmark Parameters
 Pass `--size`/`-s` to select between input sizes: 1, 2, 3.
-- Default is 1.
+- Default is 1
 - FPGA kernels are only optimized for sizes <= 3
 
 Pass `-n` to change how often a benchmark should be run. 
-- Default is 10.
+- Default is 10
 
 _Note_:
 - **kMeans** and **FDTD2D** do not support the `-n` argument.
