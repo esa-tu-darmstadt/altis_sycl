@@ -113,6 +113,7 @@ _Note_:
 ## Running Benchmarks on CPU or GPU
 
 For CPUs and GPUs, the binaries are under the `build/bin/levelX` folders.
+
 Pass `--gpu` to use a GPU present on the host (if `--gpu` is omitted, the host CPU is used):
 
 ```
