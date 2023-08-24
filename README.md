@@ -43,13 +43,22 @@ Note that the **Mandelbrot** benchmark currently requires separate builds for ea
 See section [Benchmark Parameters](#benchmark-parameters).
 
 # Build Process
-Move into any of the above directories: `cross_accelerator` or `fpga_optimized`. In the `CMakeLists.txt`, use CMake environment variables to target x86 CPUs and Intel GPUs (by default, the `USE_CUDA` and `USE_FPGA` variables are commented out), CUDA GPUs (uncomment `USE_CUDA`, comment out `USE_FPGA`) or FPGAs (uncomment `USE_FPGA`, comment out `USE_CUDA`) respectively. Currently, only one target can be active at once. When building for FPGAs, be sure that the BSP locations and exact part numbers in the CMake file are correct. Then, create a build folder and navigate into it, and run:
+1. Move into any of the above directories: `cross_accelerator` or `fpga_optimized`. 
+
+2. In the `CMakeLists.txt`, use CMake environment variables to choose the target device:
+- x86 CPUs and Intel GPUs (by default, the `USE_CUDA` and `USE_FPGA` variables are commented out)
+- NVIDIA GPUs (uncomment `USE_CUDA`, comment out `USE_FPGA`) 
+- Intel FPGAs (uncomment `USE_FPGA`, comment out `USE_CUDA`)
+
+Currently, only one target can be active at once. When building for FPGAs, be sure that the BSP locations and exact part numbers in the CMake file are correct. 
+
+3. Then, create a build folder and navigate into it, and run:
 
 ```
 cmake ..
 ```
 
-Then you can build the specific benchmarks. On CPUs and GPUs, this looks like the following:
+Then you can build the specific benchmarks. For CPUs and GPUs, this looks like the following:
 
 ```
 make cfd
@@ -63,7 +72,11 @@ make fdtd2d
 make lavamd
 ```
 
-When targeting FPGAs, you can build a separate HLS report (that takes minutes, and thus, it is recommended before starting a hardware build). Or target the Intel FPGA emulator (that takes also just minutes). Or the FPGA bitstream (that for Stratix10 takes around 4h-24h).
+When targeting FPGAs, you can build for alternative modes: 
+- a separate HLS report (takes minutes, and thus, it is recommended before starting a hardware build)
+- Intel FPGA emulator (takes also just minutes)
+- FPGA bitstream (takes between 4h - 24h for Stratix 10)
+
 The FPGA targets have the following structure:
 
 ```
