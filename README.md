@@ -29,7 +29,7 @@ Runs correctly on the following hardware:
 ## fpga_optimized
 Contains optimized FPGA versions of _level 2_ benchmarks. 
 
-Due to added FPGA optimization attributes, it can no longer be executed on CPU or GPUs! However, it is possible to execute them using the Intel FPGA Emulator and Simulator on regular CPUs. 
+Due to added FPGA optimization attributes, it can no longer be executed on CPU or GPUs! However, via the Intel FPGA Emulator and Simulator, it is possible to execute them on regular CPUs. 
 
 The optimization attributes were validated under oneAPI 22.3.0. The more recent 23.0.0 version failed to achieve the same loop II's on some benchmarks. Note that we currently have no optimized version for the **DWT2D** benchmark due to congestion on shared memory.
 
