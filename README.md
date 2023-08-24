@@ -97,8 +97,12 @@ In the `CMakeLists.txt` for each benchmark, you can pass some options to the com
 - `-Xsclock=42MHz`: playing around with this might let difficult designs build, use this when using `-Xsseed` does not fix possible timing failures. If this does not help, be sure the design is "routable" by looking in the report's kernel memory section. Congestion on a variable might be the issue here.
 
 ## Benchmark Parameters
-Pass `--size`/`-s` to select between input sizes: 1, 2 and 3 (FPGA kernels are only optimized for sizes <= 3). Default is 1.
-Pass `-n` to change how often a benchmark should be run. Default is 10.
+Pass `--size`/`-s` to select between input sizes: 1, 2, 3.
+- Default is 1.
+- FPGA kernels are only optimized for sizes <= 3
+
+Pass `-n` to change how often a benchmark should be run. 
+- Default is 10.
 
 _Note_:
 - **kMeans** and **FDTD2D** do not support the `-n` argument.
