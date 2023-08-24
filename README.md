@@ -31,7 +31,7 @@ Contains optimized FPGA versions of _level 2_ benchmarks.
 
 Due to added FPGA optimization attributes, it can no longer be executed on CPU or GPUs! However, via the Intel FPGA Emulator and Simulator, it is possible to execute them on regular CPUs. 
 
-The optimization attributes were validated under oneAPI 22.3.0. The more recent 23.0.0 version failed to achieve the same loop II's on some benchmarks. Note that we currently have no optimized version for the **DWT2D** benchmark due to congestion on shared memory.
+The optimization attributes were validated under oneAPI 22.3.0. The more recent 23.0.0 version failed to achieve the same loop IIs in some benchmarks. Note that we currently have no optimized version for the **DWT2D** benchmark due to congestion on shared memory.
 
 The optimized code is tailored for the BittWare 520N card featuring the Stratix 10 FPGA. The support for Agilex FPGAs encompasses _only_ slight code modifications for a more efficient FPGA resource utilization. Examples:
 - **CFD64**: for Stratix 10, the kernel could be vectorized 2-times. For Agilex, we needed to remove vectorization to fit the design on device.
