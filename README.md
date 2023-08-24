@@ -58,7 +58,7 @@ Currently, only one target can be active at once. When building for FPGAs, be su
 cmake ..
 ```
 
-Then you can build the specific benchmarks. Examples for CPUs and GPUs:
+Then you can build specific benchmarks. Examples for CPUs and GPUs:
 
 ```
 make cfd
