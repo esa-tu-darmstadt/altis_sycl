@@ -18,7 +18,7 @@ All DPCT-inserted warnings were addressed. Non-required features were removed, e
 
 For comparing the performance between CUDA and SYCL, _level 1_ benchmarks are also included. However, these were only tested on NVIDIA GPUs using the CUDA backend of DPCT.
 
-The benchmarks were adapted to close the performance gap between the original CUDA and the migrated SYCL codes on an RTX 2080 GPU. These adaptations encompass e.g., removal of loop-unrolling and altering inlining behaviour of functions due to differences in NVCC and DPC++ compilers.
+The benchmarks were adapted to close the performance gap between CUDA and SYCL on an RTX 2080 GPU. These adaptations encompass e.g., removal of loop-unrolling and altering inlining behaviour of functions due to differences in NVCC and DPC++ compilers.
 
 Runs correctly on the following hardware:
 * Intel and AMD x64 CPUs (tested on Ryzen, Epyc, Core i and Xeons) - by default
