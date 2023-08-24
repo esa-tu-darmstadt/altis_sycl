@@ -2,7 +2,7 @@
 
 Altis-SYCL is a SYCL-based implementation of the [Altis GPGPU benchmark suite](https://github.com/utcs-scea/altis) (originally written in CUDA) for CPUs, GPUs, and FPGAs.
 
-Altis-SYCL has been migrated from CUDA using the [DPC++ Compatibility Tool](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compatibility-tool.html) of oneAPI 2022.1. Our main focus has been to evaluate the performance of these GPU-tailored SYCL kernels and to investigate their optimization potential for FPGAs. For some cases, minor changes were made to speedup the FPGA port as our interest lies in the achievable performance without major rework of the kernels.
+Altis-SYCL has been migrated from CUDA using the [DPC++ Compatibility Tool](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compatibility-tool.html) (DPCT) of oneAPI 2022.1. Our main focus has been to evaluate the performance of these GPU-tailored SYCL kernels and to investigate their optimization potential for FPGAs. For some cases, minor changes were made to speedup the FPGA port as our interest lies in the achievable performance without major rework of the kernels.
 
 The [`benchmarks.md`](benchmarks.md) file contains a portion of our benchmark results with various accelerators.
 
