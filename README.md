@@ -14,9 +14,11 @@ Contains the unmodified output code migrated by DPCT. Does not compile.
 ## cross_accelerator
 Running and validated _level 2_ benchmarks. 
 
-All DPCT-inserted annotations were addressed. Removal of unwanted features, e.g., support for USM in benchmarks, or CUDA Graphs. Removed all DPCT library usages to support event-based timing measurements. For CUDA/SYCL performance comparisons, _level 1_ benchmarks are also included. These are, however, only tested on NVIDIA GPUs using the CUDA backend of DPCT.
+All DPCT-inserted warnings were addressed. Non-required features were removed, e.g., support for USM in benchmarks, or CUDA Graphs. Removed all DPCT library usages to support event-based timing measurements. 
 
-The benchmarks were changed to close original CUDA and SYCL performance on an RTX 2080 GPU. These changes encompass e.g., removal of loop-unrolling and altering inlining behaviour of functions due to differences in NVCC and DPC++ compilers.
+For benchmarking the performance between CUDA and SYCL, _level 1_ benchmarks are also included. These are, however, only tested on NVIDIA GPUs using the CUDA backend of DPCT.
+
+The benchmarks were adapted to close the performance gap between the original CUDA and the migrated SYCL codes on an RTX 2080 GPU. These adaptations encompass e.g., removal of loop-unrolling and altering inlining behaviour of functions due to differences in NVCC and DPC++ compilers.
 
 Runs correctly on the following hardware:
 * Intel and AMD x64 CPUs (tested on Ryzen, Epyc, Core i and Xeons) - by default
@@ -27,9 +29,13 @@ Runs correctly on the following hardware:
 ## fpga_optimized
 Contains optimized FPGA versions of _level 2_ benchmarks. 
 
-Due to FPGA optimization attributes present in code, it can no longer be executed on CPU or GPUs! It is however possible to execute them using the Intel FPGA Emulator and Simulator on regular CPUs. The optimization attributes were validated under oneAPI 22.3.0. The more recent 23.0.0 version failed to achieve the same loop II's on some benchmarks. Note that we currently have no optimized version for the **DWT2D** benchmark due to congestion on shared memory.
+Due to FPGA optimization attributes present in code, it can no longer be executed on CPU or GPUs! However, it is possible to execute them using the Intel FPGA Emulator and Simulator on regular CPUs. 
 
-The optimized code is tailored for the BittWare 520N card featuring the Stratix 10 FPGA. Agilex support only encompasses slight modifications of the code to make the design utilize FPGA resources more efficiently. For instance, **CFD64**: for Stratix 10, the kernel could be vectorized 2-times. For Agilex, we needed to remove vectorization to fit the design on device. On the other hand, **CFD32** could be replicated more on Agilex than on Stratix 10.
+The optimization attributes were validated under oneAPI 22.3.0. The more recent 23.0.0 version failed to achieve the same loop II's on some benchmarks. Note that we currently have no optimized version for the **DWT2D** benchmark due to congestion on shared memory.
+
+The optimized code is tailored for the BittWare 520N card featuring the Stratix 10 FPGA. The support for Agilex FPGAs encompasses _only_ slight code modifications for a more efficient FPGA resource utilization. Examples:
+- **CFD64**: for Stratix 10, the kernel could be vectorized 2-times. For Agilex, we needed to remove vectorization to fit the design on device.
+- **CFD32** could be replicated more on Agilex than on Stratix 10.
 
 Note that the **Mandelbrot** benchmark currently requires separate builds for each problem size. See [`mandelbrot.dp.cpp`](fpga_optimized/cuda/level2/mandelbrot/mandelbrot.dp.cpp#L42).
 
