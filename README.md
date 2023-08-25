@@ -104,7 +104,7 @@ Pass `-n` to change how often a benchmark should be run.
 
 _Note_:
 - **kMeans** and **FDTD2D** do not support the `-n` argument.
-- **kMeans** does not support the `--size` argument. Use instead `--inputFile`, which points for instance to any of the files in the [`kmeans_inputs`](kmeans_inputs/) directory.
+- **kMeans** does not support the `--size` argument. Use instead `--inputFile`, which points to an input file. Examples of these files can be found in the [`kmeans_inputs`](kmeans_inputs/) folder.
 
 ## Running Benchmarks on CPU or GPU
 
