@@ -131,7 +131,7 @@ Currently, when built with CUDA support, the benchmarks do not run on other acce
 ## Running Benchmarks on FPGA device or FPGA emulator
 For FPGAs, the binaries are located under the `build/cuda/levelX/benchmarkX` folders.
 
-Pass `--fpga` to use the FPGA or `--fpga_emu` to use the emulator. If you try to run e.g., a FPGA bitstream on an emulator or the CPU, you will get a INVALID_BINARY error message.
+Pass `--fpga` to use the FPGA device or `--fpga_emu` to use the FPGA emulator. If you try to run a FPGA bitstream on an emulator or the CPU, you will get a **INVALID_BINARY** error message.
 
 ```
 ./cuda/level2/srad/sradLib.fpga --fpga -s 1
