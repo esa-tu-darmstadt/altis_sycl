@@ -147,7 +147,7 @@ Pass `--fpga` to use the FPGA device or `--fpga_emu` to use the FPGA emulator. I
 
 The reports are placed under the `build/cuda/levelX/benchmarkX/benchmarkXLib_report.prj/reports` folder (report-build) or the `build/cuda/levelX/benchmarkX/benchmarkXLib.prj/reports` folder (hw-build).
 
-For profiling, use:
+Execution command for profiling:
 
 ```
 aocl profile ./cuda/level2/srad/sradLib.fpga --fpga -s 1 -n 1
