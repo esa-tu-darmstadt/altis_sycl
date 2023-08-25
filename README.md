@@ -49,9 +49,9 @@ See section [Benchmark Parameters](#benchmark-parameters).
 1. Move into any of the above directories, either `cross_accelerator` or `fpga_optimized`. 
 
 2. In the `CMakeLists.txt` file, enable/disable the appropriate CMake environment variables for choosing a target device:
-- x86 CPUs and Intel GPUs (by default, the `USE_CUDA` and `USE_FPGA` variables are commented out)
-- NVIDIA GPUs (uncomment `USE_CUDA`, comment out `USE_FPGA`) 
-- Intel FPGAs (uncomment `USE_FPGA`, comment out `USE_CUDA`)
+- x86 CPUs and Intel GPUs: by default, the `USE_CUDA` and `USE_FPGA` variables are commented out
+- NVIDIA GPUs: uncomment `USE_CUDA`, comment out `USE_FPGA`
+- Intel FPGAs: uncomment `USE_FPGA`, comment out `USE_CUDA`
 
 Currently, only one target can be active at once. When building for FPGAs, be sure that the BSP locations and exact part numbers in the CMake file are correct. 
 
