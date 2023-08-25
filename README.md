@@ -77,19 +77,14 @@ make lavamd
 
 5. When targeting FPGAs, you can build for alternative modes: 
 - Separate HLS report (takes minutes, and thus, it is recommended before starting a hardware build)
-- Intel FPGA emulator (takes minutes)
-- FPGA bitstream (takes e.g., between 4h - 24h for Stratix 10)
-
-The FPGA targets have the following structure:
-
 ```
 make cfdLib_fpga_report
 ```
-
+- Intel FPGA emulator (takes minutes)
 ```
 make cfdLib_fpga_emu
 ```
-
+- FPGA bitstream (takes e.g., between 4h - 24h for Stratix 10)
 ```
 make cfdLib_fpga
 ```
