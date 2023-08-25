@@ -108,9 +108,9 @@ _Note_:
 
 ## Running Benchmarks on CPU or GPU
 
-For CPUs and GPUs, the binaries are under the `build/bin/levelX` folders.
+For CPUs and GPUs, the binaries are placed under the `build/bin/levelX` folders.
 
-Pass `--gpu` to use a GPU present on the host (if `--gpu` is omitted, the host CPU is used):
+Pass `--gpu` to use a GPU present on the host. If `--gpu` is omitted, the host CPU is used:
 
 ```
 ./bin/level2/lavamd
@@ -126,7 +126,7 @@ Pass `--gpu` to use a GPU present on the host (if `--gpu` is omitted, the host C
 
 _Note_:
 
-When building with CUDA support, the benchmarks currently do not run on other accelerators than the specified CUDA architecture in the CMake file. To either support older NVIDIA GPUs (feature level < 75) or compile kernels for CPUs, change the corresponding compiler arguments.
+Currently, when built with CUDA support, the benchmarks do not run on other accelerators than the specified CUDA architecture in the CMake file. To either support older NVIDIA GPUs (i.e., feature level < 75) or compile kernels for CPUs, change the corresponding compiler arguments.
 
 ## Running Benchmarks on FPGA or FPGA emulator
 For FPGAs, the binaries are located under the `build/cuda/levelX/benchmarkX` folders.
