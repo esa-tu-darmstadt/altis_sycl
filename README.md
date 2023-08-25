@@ -35,7 +35,7 @@ Due to added FPGA optimization attributes, it can no longer be executed on CPU o
 The optimization attributes were validated under oneAPI v22.3.0. For some benchmarks, the more recent oneAPI v23.0.0 version failed to achieve the same initiation interval (II).
 
 The optimized code is tailored for a Stratix 10 FPGA (BittWare 520N card). The support for Agilex FPGAs encompasses _only_ slight code modifications for a more efficient FPGA resource utilization:
-- **CFD64**: for Stratix 10, the kernel could be vectorized 2-times. For Agilex, vectorization was disabled to fit the design on device.
+- **CFD64**: for Stratix 10, the kernel could be vectorized 2x. For Agilex, vectorization was disabled to fit the design on device.
 - **CFD32**: could be replicated more on Agilex than on Stratix 10.
 
 _Note_:
