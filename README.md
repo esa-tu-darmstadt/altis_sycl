@@ -75,10 +75,10 @@ make fdtd2d
 make lavamd
 ```
 
-When targeting FPGAs, you can build for alternative modes: 
+5. When targeting FPGAs, you can build for alternative modes: 
 - Separate HLS report (takes minutes, and thus, it is recommended before starting a hardware build)
 - Intel FPGA emulator (takes minutes)
-- FPGA bitstream (takes between 4h - 24h for Stratix 10)
+- FPGA bitstream (takes e.g., between 4h - 24h for Stratix 10)
 
 The FPGA targets have the following structure:
 
