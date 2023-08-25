@@ -155,7 +155,7 @@ aocl profile ./cuda/level2/srad/sradLib.fpga --fpga -s 1 -n 1
 
 ## Publication
 
-_To be update soon._
+_Submitted and under review. To be update soon._
 
 ## Acknowledgements
 
