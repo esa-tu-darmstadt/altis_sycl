@@ -16,7 +16,7 @@ It contains the functional and validated _level 2_ benchmarks.
 
 For achieving this, we performed the following:
 - Addressed all DPCT-inserted warnings
-- Removed non-required features, e.g., support for USM in benchmarks or CUDA Graphs
+- Removed non-required features, e.g., support for USM or CUDA Graphs
 - Removed all DPCT library usages to support event-based timing measurements
 
 For comparing the performance between CUDA and SYCL, _level 1_ benchmarks are also included. However, these were only tested on NVIDIA GPUs using the CUDA backend of DPCT.
