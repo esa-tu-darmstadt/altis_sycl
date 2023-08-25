@@ -159,4 +159,4 @@ _To be update soon._
 
 ## Acknowledgements
 
-_To be update soon._
+We thank Paderborn Center for Parallel Computing (PC2) for providing access and support during our experiments on the Stratix 10 FPGA.
