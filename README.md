@@ -22,25 +22,25 @@ For achieving this, we performed the following:
 For comparing the performance between CUDA and SYCL, _level 1_ benchmarks are also included. However, these were only tested on NVIDIA GPUs using the CUDA backend of DPCT.
 
 The _level 2_ benchmarks were adapted to close the performance gap between CUDA and SYCL on an RTX 2080 GPU. These adaptations include removing loop-unrolling as well as adapting inlining behaviour of functions due to differences in NVCC and DPC++ compilers. These benchmarks run correctly on the following hardware:
-* Intel and AMD x64 CPUs (Ryzen, Epyc, Core i and Xeon) - by default
+* Intel and AMD x64 CPUs (Ryzen, Epyc, Core i, Xeon) - by default
 * Intel GPUs - by default
 * NVIDIA GPUs using the DPC++ CUDA backend - when `USE_CUDA` CMake variable is set
 * Intel FPGAs (Stratix 10, Agilex) - when `USE_FPGA & (USE_STRATIX | USE_AGILEX)` CMake variables are set
 
 ## fpga_optimized
-Contains optimized FPGA versions of _level 2_ benchmarks. 
+It contains optimized FPGA versions of _level 2_ benchmarks. 
 
-Due to added FPGA optimization attributes, it can no longer be executed on CPU or GPUs! However, via the Intel FPGA Emulator and Simulator, it is possible to execute them on regular CPUs. 
+Due to added FPGA optimization attributes, it can no longer be executed on CPU or GPUs. However, via the Intel FPGA Emulator and Simulator, it is possible to execute them on regular CPUs. 
 
-The optimization attributes were validated under oneAPI 22.3.0. The more recent 23.0.0 version failed to achieve the same initiation interval (II) in some benchmarks. Note that we currently have no optimized version for the **DWT2D** benchmark due to congestion on shared memory.
+The optimization attributes were validated under oneAPI v22.3.0. For some benchmarks, the more recent oneAPI v23.0.0 version failed to achieve the same initiation interval (II).
 
-The optimized code is tailored for the BittWare 520N card featuring the Stratix 10 FPGA. The support for Agilex FPGAs encompasses _only_ slight code modifications for a more efficient FPGA resource utilization. Examples:
+The optimized code is tailored for a Stratix 10 FPGA (BittWare 520N card). The support for Agilex FPGAs encompasses _only_ slight code modifications for a more efficient FPGA resource utilization:
 - **CFD64**: for Stratix 10, the kernel could be vectorized 2-times. For Agilex, vectorization was disabled to fit the design on device.
 - **CFD32**: could be replicated more on Agilex than on Stratix 10.
 
 _Note_:
-
-Currently, the **Mandelbrot** benchmark requires separate builds for each problem size. See [`mandelbrot.dp.cpp`](fpga_optimized/cuda/level2/mandelbrot/mandelbrot.dp.cpp#L42).
+- Currently, there is no optimized FPGA version for the **DWT2D** benchmark due to congestion on shared memory
+- Currently, the **Mandelbrot** benchmark requires separate  FPGA bitstreams for each problem size. See [`mandelbrot.dp.cpp`](fpga_optimized/cuda/level2/mandelbrot/mandelbrot.dp.cpp#L42)
 
 ## kmeans_inputs
 See section [Benchmark Parameters](#benchmark-parameters).
@@ -157,3 +157,7 @@ For profiling, use:
 ```
 aocl profile ./cuda/level2/srad/sradLib.fpga --fpga -s 1 -n 1
 ```
+
+## Publication
+
+## Acknowledgements
