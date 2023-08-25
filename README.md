@@ -21,7 +21,7 @@ For achieving this, we performed the following:
 
 For comparing the performance between CUDA and SYCL, _level 1_ benchmarks are also included. However, these were only tested on NVIDIA GPUs using the CUDA backend of DPCT.
 
-The benchmarks were adapted to close the performance gap between CUDA and SYCL on an RTX 2080 GPU. These adaptations include removing loop-unrolling as well as adapting inlining behaviour of functions due to differences in NVCC and DPC++ compilers.
+The _level 2_ benchmarks were adapted to close the performance gap between CUDA and SYCL on an RTX 2080 GPU. These adaptations include removing loop-unrolling as well as adapting inlining behaviour of functions due to differences in NVCC and DPC++ compilers.
 
 The benchmarks run correctly on the following hardware:
 * Intel and AMD x64 CPUs (Ryzen, Epyc, Core i and Xeon) - by default
