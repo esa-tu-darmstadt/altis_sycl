@@ -1,94 +1,162 @@
 # Altis-SYCL
 
-SYCL implementation of the Altis GPGPU benchmark suite (https://github.com/utcs-scea/altis). Migrated from CUDA using the DPC++ Compatibility Tool of oneAPI 2022.1. Contains also a portion of our benchmark results with various accelerators in the benchmarks.md file. A major focus was to determine the expected performance of GPU-tailored kernels on FPGAs. Also, the optimization potential of these GPU-tailored kernels on FPGAs was investigated. Only comparably minor changes were made to speed up the FPGA port, our interest lied in the achievable performance without major rework of the kernels.
+Altis-SYCL is a SYCL-based implementation of the [Altis GPGPU benchmark suite](https://github.com/utcs-scea/altis) (originally written in CUDA) for CPUs, GPUs, and FPGAs.
+
+Altis-SYCL has been migrated from CUDA using the [DPC++ Compatibility Tool](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compatibility-tool.html) (DPCT) of oneAPI v2022.1. Our main focus is to evaluate the performance of these GPU-tailored SYCL kernels and to investigate their optimization potential for FPGAs. For some cases, minor code changes were made to speedup the FPGA port as our interest lies in the achievable performance without major rework of the kernels.
+
+The [`benchmarks.md`](benchmarks.md) file contains a portion of our performance evaluation on various accelerators.
 
 # Directory Structure
 
 ## unmodified_migration
-Contains the unmodified output of the DPCT migration tool. Does not compile.
+It contains the unmodified output code migrated by DPCT. It does _not_ compile.
 
 ## cross_accelerator
-Running and validated level 2 benchmarks. All annotations of DPCT were addressed. Removal of unwanted features, e.g., support for USM in benchmarks, or CUDA Graphs. Removed all DPCT library usages to support event-based timing measurements. For CUDA/SYCL performance comparisons, level 1 benchmarks are also included. These are, however, only tested on NVIDIA GPUs using the CUDA backend of DPCT.
+It contains the functional and validated _level 2_ benchmarks. 
 
-The benchmarks were changed to close original CUDA and SYCL performance on an RTX 2080 GPU. These changes encompass e.g., removal of loop-unrolling and altering inlining behaviour of functions due to differences in nvcc and dpc++ compilers.
+For achieving this, we performed the following:
+- Addressed all DPCT-inserted warnings
+- Removed non-required features, e.g., support for USM or CUDA Graphs
+- Removed all DPCT library usages to support event-based timing measurements
 
-Runs correctly on the following hardware:
-* Intel and AMD x64 CPUs (tested on Ryzen, Epyc, Core i and Xeons) - by default
-* Intel GPUs - by default
-* NVIDIA GPUs using the DPC++ CUDA backend - when USE_CUDA CMake variable is set
-* Intel FPGAs (Stratix10, Agilex7)- when USE_FPGA & (USE_STRATIX | USE_AGILEX) CMake variables are set
+For comparing the performance between CUDA and SYCL, _level 1_ benchmarks are also included. However, these were only tested on NVIDIA GPUs using the CUDA backend of DPCT.
+
+The _level 2_ benchmarks were adapted to close the performance gap between CUDA and SYCL on an RTX 2080 GPU. These adaptations include removing loop-unrolling as well as adapting inlining behaviour of functions due to differences in NVCC and DPC++ compilers. These benchmarks run correctly on the following hardware:
+* Intel and AMD x64 CPUs (Ryzen, Epyc, Core i, Xeon): by default
+* Intel GPUs: by default
+* NVIDIA GPUs using the DPC++ CUDA backend: when `USE_CUDA` CMake variable is set
+* Intel FPGAs (Stratix 10, Agilex): when `USE_FPGA & (USE_STRATIX | USE_AGILEX)` CMake variables are set
 
 ## fpga_optimized
-Contains optimized FPGA versions of level 2 benchmarks. Due to FPGA optimization attributes peresent in code, it can no longer be executed on CPU or GPUs! It is however possible to execute them using the Intel FPGA Emulator and Simulator on regular CPUs. The optimization attributes were validated under oneAPI 22.3.0. The more recent 23.0.0 version failed to achieve the same loop II's on some benchmarks. Note that we currently have no optimized version for the DWT2D benchmark due to congestion on shared memory.
+It contains optimized FPGA versions of _level 2_ benchmarks. 
 
-The optimized code is tailored for the BittWare 520N card featuring the Stratix10 FPGA. Agilex support only encompasses slight modifications of the code to make the design utilize FPGA resources more efficiently. CFD64 for instance: Using Stratix10, the kernel could be vectorized 2-times. On Agilex, we needed to remove vectorizazion to make the design fit. On the other hand, CFD32 could be replicated more on Agilex than using the Stratix FPGA.
+Due to added FPGA optimization attributes, it can no longer be executed on CPU or GPUs. However, via the Intel FPGA Emulator and Simulator, it is possible to execute them on regular CPUs. 
 
-Note that the Mandelbrot benchmark currently requires seperate builds for each problem size, see mandelbrot.dp.cpp.
+The optimization attributes were validated under oneAPI v22.3.0. For some benchmarks, the more recent oneAPI v23.0.0 version failed to achieve the same initiation interval (II).
+
+The optimized code is tailored for a Stratix 10 FPGA (BittWare 520N card). The support for Agilex FPGAs encompasses _only_ slight code modifications for a more efficient FPGA resource utilization. Examples on the **CFD32** and **CFD64** benchmarks:
+- **CFD32**: compute units could be replicated 4x on Stratix 10, while 8x on Agilex
+- **CFD64**: kernel could be vectorized 2x on Stratix 10. However, vectorization was disabled to fit the design on Agilex
+
+_Note_:
+- Currently, there is no optimized FPGA version for the **DWT2D** benchmark due to congestion on shared memory
+- Currently, the **Mandelbrot** benchmark requires separate  FPGA bitstreams for each problem size. See [`mandelbrot.dp.cpp`](fpga_optimized/cuda/level2/mandelbrot/mandelbrot.dp.cpp#L42)
 
 ## kmeans_inputs
-See section "Benchmark Parameters".
+See section [Benchmark Parameters](#benchmark-parameters).
 
 # Build Process
-cd into the desired directory. In the CMakeLists.txt, use CMake environment variables to target x86 CPUs and Intel GPUs (default, USE_CUDA and USE_FPGA variables are commented out), CUDA GPUs (uncomment USE_CUDA variable, comment USE_FPGA variable) or FPGAs (uncomment USE_FPGA variable, comment USE_CUDA variable) respectively. Currently, only one target can be active at once. When building for FPGAs, be sure the BSP locations and exact part numbers in the CMake file are correct. Then, create a build folder and navigate into it, run
+1. Move into any of the above directories, either `cross_accelerator` or `fpga_optimized`. 
 
-> cmake ..
+2. In the `CMakeLists.txt` file, enable/disable the appropriate CMake environment variables for choosing a target device:
+- x86 CPUs and Intel GPUs: by default, the `USE_CUDA` and `USE_FPGA` variables are commented out
+- NVIDIA GPUs: uncomment `USE_CUDA`, comment out `USE_FPGA`
+- Intel FPGAs: uncomment `USE_FPGA`, comment out `USE_CUDA`
 
-Then you can build the specific benchmarks. On CPUs and GPUs this looks like the following:
+Currently, only one target can be active at once. When building for FPGAs, be sure that the BSP locations and exact part numbers in the CMake file are correct. 
 
-> make cfd
+3. Create a `build` folder and move into it, and then run:
 
-> make fdtd2d
+```
+cmake ..
+```
 
-> make lavamd
+4. Then you can build specific benchmarks. Examples for CPUs and GPUs:
 
-When targeting FPGAs, you can build a seperate HLS report (Takes minutes, recommended before starting HW-build).
-Or target the Intel FPGA emulator (Takes also just minutes).
-Or the final binary (Takes hours for Stratix10 around 4h-24h).
-The FPGA targets have the following structure:
+```
+make cfd
+```
 
-> make cfdLib_fpga_report
+```
+make fdtd2d
+```
 
-> make cfdLib_fpga_emu
+```
+make lavamd
+```
 
-> make cfdLib_fpga
+5. When targeting FPGAs, you can build for alternative modes: 
+- Separate HLS report (takes minutes, and thus, it is recommended before starting a hardware build)
+```
+make cfdLib_fpga_report
+```
+- Intel FPGA emulator (takes minutes)
+```
+make cfdLib_fpga_emu
+```
+- FPGA bitstream (takes e.g., between 4h - 24h for Stratix 10)
+```
+make cfdLib_fpga
+```
 
-In the CMakeLists.txt for each benchmark, you can pass some properties to the compiler by appending them to COMPILE_FLAGS or LINK_FLAGS:
-- -Xsseed=42 -> Use this when you get timing errors
-- -Xsprofile -> Use this to build a profiling build. Careful: These will be larger as normal ones, large designs might no longer fit.
-- -Xsclock=42MHz -> Playing around with this might let difficult designs build, use this when Xsseed does not fix possible timing failures. If this also dont help, be sure the design is "routable" by looking in the report's kernel memory section. Congestion on a variable might be the issue here.
+In the `CMakeLists.txt` file, for each benchmark, you can pass some options to the compiler by appending them to `COMPILE_FLAGS` or `LINK_FLAGS`:
+- `-Xsseed=42`: use this when you get timing errors
+- `-Xsprofile`: use this to build a profiling build. _Careful_: these will be larger as normal ones, large designs might no longer fit
+- `-Xsclock=42MHz`: use this when using `-Xsseed` does not fix possible timing failures. It might let difficult designs build. If it does not help, be sure the design is "routable" by looking in the report's kernel memory section. Congestion on a variable might be the issue here
 
 ## Benchmark Parameters
-Pass --size/-s to select between input sizes: 1, 2 and 3 (FPGA kernels only optimized for sizes <= 3). Default is 1.
-Pass -n to change how often a benchmark should be run. Default is 10.
+Pass `--size`/`-s` to select between input sizes: 1, 2, 3.
+- Default is 1
+- FPGA kernels are only optimized for sizes <= 3
 
-NOTE:
-kMeans and FDTD2D do not support -n argument.
-kMeans does not support --size argument. Use --inputFile here, pointing for instance to the files we used in the kmeans_inputs directory.
+Pass `-n` to change how often a benchmark should be run. 
+- Default is 10
 
-## Run Benchmarks on CPU or GPU
+_Note_:
+- **kMeans** and **FDTD2D** do not support the `-n` argument.
+- **kMeans** does not support the `--size` argument. Use instead `--inputFile`, which points to an input file. Examples files can be found in the [`kmeans_inputs`](kmeans_inputs/) folder.
 
-For CPUs and GPUs, the binaries are in the build/bin/levelX folders.
-Pass --gpu to use a GPU present on the host (if --gpu is omitted, te host CPU is used):
+## Running Benchmarks on CPU or GPU
 
-> ./bin/level2/lavamd
+For CPUs and GPUs, the binaries are placed under the `build/bin/levelX` folders.
 
-> ./bin/level2/lavamd --gpu
+Pass `--gpu` to use a GPU present on the host. If `--gpu` is omitted, the host CPU is used:
 
-> ./bin/level2/lavamd --size 2
+```
+./bin/level2/lavamd
+```
 
-Note that when building with CUDA support, the benchmarks currently do not run on other accelerators then the specified CUDA architecture in the CMake file. To support older NVIDIA GPUs (feature level < 75) or to also compile kernels for CPUs, change the compiler arguments.
+```
+./bin/level2/lavamd --gpu
+```
 
-## Run Benchmarks on FPGA or FPGA emulator
-For FPGAs, the binaries are located in the build/cuda/levelX/benchmarkX folders.
-Pass --fpga to use the FPGA or --fpga_emu to use the emulator. If you try to run e.g., a FPGA binary on an emulator or the CPU, you will get a INVALID_BINARY error message.
+```
+./bin/level2/lavamd --size 2
+```
 
-> ./cuda/level2/srad/sradLib.fpga --fpga -s 1
+_Note_:
 
-> ./cuda/level2/srad/sradLib.fpga --fpga -s 2
+Currently, when built with CUDA support, the benchmarks do not run on other accelerators than the specified CUDA architecture in the CMake file. To either support older NVIDIA GPUs (i.e., feature level < 75) or compile kernels for CPUs, change the corresponding compiler arguments.
 
-> ./cuda/level2/nw/nwLib.fpga_emu --fpga_emu -s 3
+## Running Benchmarks on FPGA device or FPGA emulator
+For FPGAs, the binaries are located under the `build/cuda/levelX/benchmarkX` folders.
 
-The reports are in the build/cuda/levelX/benchmarkX/benchmarkXLib_report.prj/reports folder (report-build) or the build/cuda/levelX/benchmarkX/benchmarkXLib.prj/reports folder (hw-build).
+Pass `--fpga` to use the FPGA device or `--fpga_emu` to use the FPGA emulator. If you try to run a FPGA bitstream on an emulator or CPU, you will get a **INVALID_BINARY** error message.
 
-For profiling use
-> aocl profile ./cuda/level2/srad/sradLib.fpga --fpga -s 1 -n 1
+```
+./cuda/level2/srad/sradLib.fpga --fpga -s 1
+```
+
+```
+./cuda/level2/srad/sradLib.fpga --fpga -s 2
+```
+
+```
+./cuda/level2/nw/nwLib.fpga_emu --fpga_emu -s 3
+```
+
+The reports are placed under the `build/cuda/levelX/benchmarkX/benchmarkXLib_report.prj/reports` folder (report-build) or the `build/cuda/levelX/benchmarkX/benchmarkXLib.prj/reports` folder (hw-build).
+
+Execution command for profiling:
+
+```
+aocl profile ./cuda/level2/srad/sradLib.fpga --fpga -s 1 -n 1
+```
+
+## Publication
+
+_Submitted and under review. To be update soon._
+
+## Acknowledgements
+
+We thank [Paderborn Center for Parallel Computing (PC2)](https://pc2.uni-paderborn.de) for providing access and support during our experiments on the Stratix 10 FPGA.
