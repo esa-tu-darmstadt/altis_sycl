@@ -155,7 +155,9 @@ aocl profile ./cuda/level2/srad/sradLib.fpga --fpga -s 1 -n 1
 
 ## Publication
 
-_Submitted and under review. To be update soon._
+If you want to cite Altis-SYCL, please use the following information:
+
+Weckert, C., Solis-Vasquez, L., Oppermann, J., Koch, A., and Sinnen, O. (2023). Altis-SYCL: Migrating Altis Benchmarking Suite from CUDA to SYCL for GPUs and FPGAs. In Proceedings of the SC ’23 Workshops of The International Conference on High Performance Computing, Network, Storage, and Analysis. Association for Computing Machinery. doi: [10.1145/3624062.3624542](https://dl.acm.org/doi/10.1145/3624062.3624542)
 
 ## Acknowledgements
 
